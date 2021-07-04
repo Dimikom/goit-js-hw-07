@@ -17,24 +17,26 @@
       img {
         display: block;
         max-width: 100%;
-        height: auto;
+        min-height: 100%;
       }
       .list {
-        display: flex;
-        align-items: center;
-        margin-left: -20px;
-        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+        grid-gap: 1em;
+        margin: initial;
       }
       .list__item {
         list-style: none;
-        flex-basis: calc(100% / 3 - 20px);
+        min-height: 100%;
+        padding: initial;
+        max-width: none;
       }
     </style>
   </head>
   <body>
     <p><a href="index.html">На главную</a></p>
 
-    <ul id="gallery"></ul>
+    <ul id="gallery" class="list list__item"></ul>
 
     <script src="js/task-03.js" type="module"></script>
   </body>
