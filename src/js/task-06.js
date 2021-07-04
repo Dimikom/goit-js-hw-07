@@ -14,5 +14,5 @@ inputElem.addEventListener("change", (event) => {
     inputElem.classList.remove("valid");
     inputElem.classList.add("invalid");
   }
-  console.log(input);
+  //console.log(input);
 });

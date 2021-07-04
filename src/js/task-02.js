@@ -20,6 +20,6 @@ const createIngredients = ingredients.map((ingredient) =>
   createListItem(ingredient)
 );
 
-console.dir(createIngredients);
+//console.dir(createIngredients);
 
 listElem.append(...createIngredients);

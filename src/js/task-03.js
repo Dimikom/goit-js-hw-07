@@ -20,6 +20,6 @@ const createList = images.map(
     `<li class="list__item"><img src="${image.url}" alt="${image.alt}"></li>`
 );
 
-console.dir(createList);
+//console.dir(createList);
 
 listImages.insertAdjacentHTML("afterbegin", createList.join(""));
